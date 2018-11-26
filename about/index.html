@@ -13,12 +13,25 @@ title: About Dimonasdf
 			</ul>
 			
 			
-			<p>Get in touch.</p>
+			<p>Get in touch.
 			
-			<form method="POST" action="https://formspree.io/dimonasdf@inbox.ru">
-			<input type="email" name="email" placeholder="Your email">
-			<textarea name="message" placeholder="Message"></textarea>
-			<button type="submit">Send Email</button>
+			<br>
+			
+			<script>
+				var contactform = document.getElementById('formaction');
+				contactform.setAttribute('action', '//formspree.io/' + 'dimoansdf' + '@' + 'mail' + '.' + 'ru');
+			</script>
+
+			<input type="email" name="email" placeholder="Your email (optional)">
+			<textarea name="message" placeholder="Your message"></textarea>
+			<button type="submit">Send Message</button>
+			
+			<input type="hidden" name="_next" value="//path/thanks.html" />
+			<input type="text" name="_gotcha" style="display:none" />
+
 			</form>
+
+			
+			</p>
 			
 		</div>
