@@ -10,61 +10,59 @@ title: Games
 
 <style type="text/css">
 /*Outer Table*/
-.outg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
-.outg td{font-family:Georgia, sans-serif;font-size:20px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-.outg th{font-family:Georgia, sans-serif;font-size:20px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+/*
+.outg table
+{
+	font-family:Georgia, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	border-collapse:collapse;
+	border-spacing:0;
+	border:none;
+	background-color:#fff;
+	word-break:normal;
+	overflow:hidden;
+}
 
+.outg th, td, tr
+{
+	border: none;
+	border-collapse:collapse;
+}
 
 .outg .outg-head{background-color:#efefef}
 .outg .outg-break{height: 50px}
 
-.outg .outg-text{text-align:center; vertical-align: center}
-.outg .outg-image{text-align:center; vertical-align: center; width:45%}
-
+.outg .outg-text{margin:auto; vertical-align: center}
+.outg .outg-image{align:center; vertical-align: center; width:45%}
+*/
 
 /*Inner Table*/
-.intg  
+.intg table
 {
-	border-collapse: collapse;
+	padding:10px 5px;
+
 	border-spacing: 0;
 	border: 1px solid #ccc;
-	border-color: #ccc;
 	border-radius: 5px;
 	/*overflow: hidden;*/
 	text-align: center;
 	vertical-align: center;
 }
 
-.intg td
+.intg th, tr, td
 {
-	font-family:Georgia, sans-serif;
-	font-size:20px;
-	padding:10px 5px;
-	border-style:solid;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	/*border-collapse: collapse;*/
+	/*border-style:solid;
 	border-width:1px;
-	border-radius: 0px;
+	border-radius: 0px;*/
 	/*overflow:hidden;*/
 	word-break:normal;
-	border-color:#ccc;
-	color:#333;
 	background-color:#fff;
 }
 
-.intg th
-{
-	font-family:Georgia, sans-serif;
-	font-size:20px;
-	font-weight:normal;
-	padding:10px 5px;
-	border-style:solid;
-	border-width:1px;
-	border-radius: 0px;
-	/*overflow:hidden;*/
-	word-break:normal;
-	border-color:#ccc;
-	color:#333;
-	background-color:#fff;
-}
 
 
 /*name*/
@@ -72,7 +70,7 @@ title: Games
 /*data*/
 .intg .intg-data{font-size:85%}
 /*text*/
-.intg .intg-text{font-size:100%; text-align: left}
+.intg .intg-text{font-size:100%; text-align: left; padding: 10px;}
 /*links*/
 .intg .intg-links{font-size:100%; width: 20%; vertical-align: center}
 
@@ -94,7 +92,74 @@ box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 border-radius: 5px; /*only changes shadow in Chrome preview*/
 }
 
+.game_post
+{
+	align-content: center;
+}
+.info_table
+{
+	align-content: left;
+}
+.image_holder:
+{
+	align-content: right;
+	vertical-align: center;
+	width:45%
+}
+
+
 </style>
+
+	<div class = "game_post">
+		<div class = "info_table">
+			<table class="intg frame">
+				<tr>
+					<th class="intg-name" rowspan="2">The Defender</th>
+					<th class="intg-data" colspan="2">Feb 2019</th>
+					<th class="intg-links" rowspan="3"><a href="/games/DNA3_TheDefender_Build_web/index.html">Play Online</a>
+					<br><br>
+					<a href= "https://dimonasdf.itch.io/the-defender">Jam Page</a></th>
+				</tr>
+
+				<tr>
+					<th class="intg-data" colspan="2">#JamDNA3 #Game #Prototype #Unity</th>
+				</tr>
+
+				<tr>
+					<td class="intg-text" colspan="3">A quick 24 hour game prototype for <a href="https://itch.io/jam/jamdna-3">Weekly JamDNA #3</a>. It was supposed to be made in 96 hours, but I got in a bit late. Lots of funky code, not polished mechanics, no win screen :)</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "image_holder">
+			<img width="85%" src="/games/defender_dna_3.jpg" class = "frame">
+		</div>>
+	</div>
+
+
+
+
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="./W3.CSS Template_files/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="./W3.CSS Template_files/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="./W3.CSS Template_files/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
+      </div>
+
+
+
+
 
 
 <table class="outg">
@@ -107,27 +172,11 @@ border-radius: 5px; /*only changes shadow in Chrome preview*/
   <tr>
     <td class="outg-text">
 	
-		<table class="intg frame">
-			<tr>
-				<th class="intg-name" rowspan="2">The Defender</th>
-				<th class="intg-data" colspan="2">Feb 2019</th>
-				<th class="intg-links" rowspan="3"><a href="/games/DNA3_TheDefender_Build_web/index.html">Play Online</a><br><br><!--Download Windows<br><br>--><a href= "https://dimonasdf.itch.io/the-defender">Jam Page</a></th>
-			</tr>
 
-			<tr>
-				<td class="intg-data" colspan="2">#JamDNA3 #Game #Prototype #Unity</td>
-			</tr>
-
-			<tr>
-				<td class="intg-text" colspan="3">A quick 24 hour game prototype for <a href="https://itch.io/jam/jamdna-3">Weekly JamDNA #3</a>. It was supposed to be made in 96 hours, but I got in a bit late. Lots of funky code, not polished mechanics, no win screen :)</td>
-			</tr>
-		</table>
 		
 	</td>
 	
-    <td class="outg-image">
-		<img width="85%" src="/games/defender_dna_3.jpg" class = "frame"></th>
-	</td>
+
 
   </tr>
   
