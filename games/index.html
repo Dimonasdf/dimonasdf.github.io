@@ -10,33 +10,123 @@ title: Games
 
 <style type="text/css">
 /*Outer Table*/
-.outg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
-.outg td{font-family:Georgia, sans-serif;font-size:20px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-.outg th{font-family:Georgia, sans-serif;font-size:20px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+
+.outg
+{
+	border-collapse:collapse;
+	border-spacing:0;
+	border:none;
+	border-color:#ccc;
+}
+
+.outg td
+{
+	font-family:Georgia, sans-serif;
+	font-size:20px;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:0px;
+	overflow:hidden;
+	word-break:normal;
+	border-color:#ccc;
+	color:#333;
+	background-color:#fff;
+}
+
+.outg th
+{
+	font-family:Georgia, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:0px;
+	overflow:hidden;
+	word-break:normal;
+	border-color:#ccc;
+	color:#333;
+	background-color:#fff;
+}
 
 
 .outg .outg-head{background-color:#efefef}
 .outg .outg-break{height: 50px}
 
-.outg .outg-text{text-align:center; vertical-align: top}
+.outg .outg-text{text-align:center; vertical-align: center}
 .outg .outg-image{text-align:center; vertical-align: center; width:45%}
 
 
 /*Inner Table*/
-.intg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#ccc;}
-.intg td{font-family:Georgia, sans-serif;font-size:20px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-.intg th{font-family:Georgia, sans-serif;font-size:20px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.intg  
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #ccc;
+	border-color: #ccc;
+	border-radius: 5px;
+	/*overflow: hidden;*/
+	text-align: center;
+	vertical-align: center;
+}
 
-.intg {text-align:center; vertical-align: center}
+.intg td
+{
+	font-family:Georgia, sans-serif;
+	font-size:20px;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:1px;
+	border-radius: 0px;
+	/*overflow:hidden;*/
+	word-break:normal;
+	border-color:#ccc;
+	color:#333;
+	background-color:#fff;
+}
+
+.intg th
+{
+	font-family:Georgia, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:1px;
+	border-radius: 0px;
+	/*overflow:hidden;*/
+	word-break:normal;
+	border-color:#ccc;
+	color:#333;
+	background-color:#fff;
+}
+
 
 /*name*/
 .intg .intg-name{font-size:125%}
 /*data*/
 .intg .intg-data{font-size:85%}
 /*text*/
-.intg .intg-text{font-size:100%; text-align: left}
+.intg .intg-text{font-size:100%; text-align: left; padding: 10px 15px;}
 /*links*/
-.intg .intg-links{font-size:100%; width: 20%; vertical-align: bottom}
+.intg .intg-links{font-size:100%; width: 20%; vertical-align: center}
+
+.frame {
+width:95%;
+
+position: relative;
+margin: 30px 0 20px;
+padding: 0 0px;
+background-color: #fefdfa;
+border: 1px solid #ccc;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px; /*only changes shadow in Chrome preview*/
+}
 
 </style>
 
@@ -51,7 +141,7 @@ title: Games
   <tr>
     <td class="outg-text">
 	
-		<table class="intg">
+		<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">The Defender</th>
 				<th class="intg-data" colspan="2">Feb 2019</th>
@@ -70,7 +160,7 @@ title: Games
 	</td>
 	
     <td class="outg-image">
-		<img width="85%" src="defender_dna_3.jpg">
+		<img width="85%" src="/games/defender_dna_3.jpg" class = "frame"></th>
 	</td>
 
   </tr>
@@ -86,13 +176,13 @@ title: Games
   <tr>
     <td class="outg-image">
 	
-		<img width="85%" src="firefly5.jpg">
+		<img width="85%" src="/games/firefly5.jpg" class = "frame">
 	
 	</td>
 	
     <td class="outg-text">
 	
-				<table class="intg">
+				<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">Firefly 5</th>
 				<th class="intg-data" colspan="2">Jan 2019</th>
@@ -122,11 +212,11 @@ title: Games
   <tr>
     <td class="outg-text">
 	
-		<table class="intg">
+		<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">Breakout</th>
 				<th class="intg-data" colspan="2">Nov 2018</th>
-				<th class="intg-links" rowspan="3"><!--<a href="">Play Online</a><br><br>Download Windows<br><br><a href= "">Source code</a>--></th>
+				<th class="intg-links" rowspan="3">Not uploaded yet :(</th>
 			</tr>
 
 			<tr>
@@ -134,14 +224,14 @@ title: Games
 			</tr>
 
 			<tr>
-				<td class="intg-text" colspan="3">Variation of the classic  game - a graduation project for the Coursera Unity course <a href="https://www.coursera.org/learn/intermediate-object-oriented-programming-unity-games"><i>Intermediate Object-Oriented Programming for Unity Games</i></a>.<br>Not uploaded yet :(</td>
+				<td class="intg-text" colspan="3">Variation of the classic  game - a graduation project for the Coursera Unity course <a href="https://www.coursera.org/learn/intermediate-object-oriented-programming-unity-games"><i>Intermediate Object-Oriented Programming for Unity Games</i></a>.</td>
 			</tr>
 		</table>
 		
 	</td>
 	
     <td class="outg-image">
-		<!--<img width="85%" src="">-->
+		<img width="85%" src="/games/breakout.jpg" class = "frame">
 	</td>
   </tr>
     
@@ -155,12 +245,12 @@ title: Games
   
   <tr>
       <td class="outg-image">
-		<img width="85%" src="asteroids.jpg">
+		<img width="85%" src="/games/asteroids.jpg" class = "frame">
 	</td>
 	
     <td class="outg-text">
 	
-		<table class="intg">
+		<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">Asteroids</th>
 				<th class="intg-data" colspan="2">Oct 2018</th>
@@ -190,7 +280,7 @@ title: Games
     <tr>
     <td class="outg-text">
 	
-		<table class="intg">
+		<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">Hither Thither Shower</th>
 				<th class="intg-data" colspan="2">June 2018</th>
@@ -209,7 +299,7 @@ title: Games
 	</td>
 	
     <td class="outg-image">
-		<img width="85%" src="hts.png">
+		<img width="85%" src="/games/hts.png" class = "frame">
 	</td>
   </tr>
     
@@ -223,12 +313,12 @@ title: Games
 
     <tr>
       <td class="outg-image">
-		<img width="85%" src="porsche_ring.png">
+		<img width="85%" src="/games/porsche_ring.png" class = "frame">
 	</td>
 	
     <td class="outg-text">
 	
-		<table class="intg">
+		<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">Porsche Ring</th>
 				<th class="intg-data" colspan="2">Apr 2018</th>
@@ -258,7 +348,7 @@ title: Games
       <tr>
     <td class="outg-text">
 	
-		<table class="intg">
+		<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">Tic Tac Toe</th>
 				<th class="intg-data" colspan="2">Dec 2017</th>
@@ -277,7 +367,7 @@ title: Games
 	</td>
 	
     <td class="outg-image">
-		<img width="85%" src="t_t_t_3.png">
+		<img width="85%" src="/games/t_t_t_3.png" class = "frame">
 	</td>
   </tr>
     
@@ -291,12 +381,12 @@ title: Games
   
       <tr>
       <td class="outg-image">
-		<img width="85%" src="construct2walker.JPG">
+		<img width="85%" src="/games/construct2walker.JPG" class = "frame">
 	</td>
 	
     <td class="outg-text">
 	
-		<table class="intg">
+		<table class="intg frame">
 			<tr>
 				<th class="intg-name" rowspan="2">Untitled</th>
 				<th class="intg-data" colspan="2">Unknown</th>
